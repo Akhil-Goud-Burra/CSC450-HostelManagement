@@ -1,0 +1,38 @@
+
+{% extends 'adminbase.html' %}
+{% block content %}
+
+<center>
+	<font size="" color="#ff0000"><strong>{{msg}}</strong></font>
+	<br><br>
+
+<h2>Allot hostel</h2><br>
+<form method="post" action="/mbookingpage2/">
+ {% csrf_token %} 
+{% for d1 in data %}
+
+<table width="60%" id="tab" >
+	<tr>
+	<th> Req ID<td><input  type="text" name="id" value="{{d1.id}}" readonly  required="required" >
+	<tr>
+	<th> Name:<td><input  type="text" name="name" value="{{d1.name}}" readonly  required="required" >
+	<tr>
+	<th> Email: <td><input  type="text" name="email"  value="{{d1.email}}" readonly required="required" >
+	<tr>
+	<th> Room Number:<td><input  type="text" name="room"  required="required" >
+	<tr>
+	<th> Amount:<td><input  type="text" name="amt" value="8000"  required="required" >
+	
+<tr>
+	<th> <td><input  type="submit" value="Allot">
+
+{% endfor %}
+	
+</tr>
+</table>
+
+</form>
+
+
+
+{% endblock %}
