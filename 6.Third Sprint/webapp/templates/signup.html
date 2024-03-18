@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<font size="+1" color="red">{{msg}}
+</font>
+<center>
+<h2>User Registration</h2>
+<br>
+<br><form method="post" action="/usignupaction/">
+	{% csrf_token %} 
+<table width="60%">
+                    <tr><td><input  size=40 type="text" name="name" placeholder="Enter Name" required="required" ></input><br></td></tr>
+                    <tr><td><input   size=40 type="text" name="ph" placeholder="Enter Phone Number" required="required" onblur="validate1()"></input><br></td></tr>
+                    <tr><td><input   size=40 type="email" name="mail" placeholder="Email, example@example.com" required="required" onblur="validate1()"></input><br></td></tr>
+
+					<tr><td><input  size=40 type="text" name="addr" placeholder="Enter Address" required="required" ></input><br></td></tr>
+
+					<tr><td><input size=40  type="Password" name="pwd" placeholder="Enter Password" required="required" onblur="validate5()"></input><br></td></tr>
+
+
+					<tr><td><br><input type="submit"  value="Register">
+                
+</table>
+</form>
+
+{% endblock %}

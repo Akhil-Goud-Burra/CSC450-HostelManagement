@@ -1,0 +1,47 @@
+
+{% extends 'adminbase.html' %}
+{% block content %}
+<center>
+	<font size="" color="#ff0000"><strong>{{msg}}</strong></font>
+	<br><br>
+
+<h2>Add Rooms</h2><br>
+<form method="post" action="/roomadd/">
+ {% csrf_token %} 
+
+<table width="60%" id="tab" >
+	<tr>
+	<th> Room Number<td><input  type="text" name="roomnum"  required="required" >
+	<tr>
+	<th> No. of beds<td><input  type="number" min=1 name="beds"  required="required" >
+	
+<tr>
+	<th> <td><input  type="submit" value="Add">
+
+	
+</tr>
+</table>
+
+</form>
+
+<br><br>
+
+<h2>View Rooms</h2><br>
+
+<table width="80%" id="tab" >
+<tr><th>Sno<th>Room Number<th>No. of beds<th>Availability
+{% for d1 in data %}
+<TR><TD>{{forloop.counter}}
+
+<TD><h5>{{d1.roomnum}}</font><TD>{{d1.beds}}<TD>{{d1.available}}
+
+</table>
+<br><br>
+
+{% endfor %}
+
+</table>
+
+
+
+{% endblock %}

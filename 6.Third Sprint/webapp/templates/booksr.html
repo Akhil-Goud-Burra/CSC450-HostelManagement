@@ -1,0 +1,56 @@
+
+{% extends 'userbase.html' %}
+{% block content %}
+
+
+<center>
+	<font size="" color="#ff0000"><strong>{{msg}}</strong></font>
+	<br><br>
+
+<h2>Book Study Room</h2><br>
+
+
+<table width="60%" id="tab" >
+	<tr>
+	<th> Name<td><input  type="text" name="name" value="{{name}}"  required="required" >
+	<tr>
+	<th> Email<td><input  type="text" name="email"value="{{email}}"  required="required" >
+	
+
+	<form method="post" action="/booksrm/">
+ {% csrf_token %} 
+
+	<tr>
+	<th>Book Monthly-basis<br>
+	<td> Cost: <input type="text" name="amt" value="4000" readonly> 
+	<input  type="submit" value="Book">
+
+</form>
+	
+
+	<form method="post" action="/booksrd/">
+ {% csrf_token %} 
+
+	<tr>
+	<th>Book Daily-basis<br>
+
+	<td> Cost: <input type="text" name="amt" value="150" readonly> 
+	<br>
+	<table>
+	<tr>
+		<td>From:<input type="date" name="d1" required> </td>
+		<td>To:<input type="date" name="d2" required> </td>
+	</tr>
+	</table>
+	<input  type="submit" value="Book">
+
+</form>
+
+
+</tr>
+</table>
+
+
+
+
+{% endblock %}

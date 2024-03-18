@@ -1,0 +1,25 @@
+
+{% extends 'adminbase.html' %}
+{% block content %}
+<center>
+
+<font size="" color="#ff0000"><strong>{{msg}}</strong></font>
+
+<h2>View Transactions</h2>
+<br><br>
+
+<table width="100%" id="tab" >
+
+<tr><th>ID<th>Name<th>Email<th>Room<th>Date of bill<th>Amount<th>Payment
+{% for d1 in data %}
+
+<TR><TD>{{d1.id}}<TD>{{d1.name}}<TD>{{d1.email}}<TD>{{d1.room}}<TD>{{d1.dat_e}}<TD>{{d1.amount}} Rs/- <TD>Done
+
+
+{% endfor %}
+
+</table>
+
+<br><br>
+
+{% endblock %}
