@@ -1,0 +1,26 @@
+
+{% extends 'userbase.html' %}
+{% block content %}
+<center>
+
+
+	<font size="" color="#ff0000"><strong>{{msg}}</strong></font>
+
+<h2>Transactions</h2>
+<br><br>
+
+<table width="100%" id="tab" >
+
+<tr><th>ID<th>Date of bill<th>Room<th>Amount<th>Payment
+{% for d1 in data %}
+
+<TR><TD>{{d1.id}}<TD>{{d1.dat_e}}<td>{{d1.room}}<TD>{{d1.amount}} Rs/- <TD>Done
+
+
+{% endfor %}
+
+</table>
+
+<br><br>
+
+{% endblock %}

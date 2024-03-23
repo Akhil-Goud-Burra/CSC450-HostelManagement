@@ -1,0 +1,54 @@
+
+{% extends 'userbase.html' %}
+{% block content %}
+
+
+
+{% if b %}
+
+<h2>View Requests</h2><br>
+
+<table width="60%" id="tab" >
+<tr><th>Req.Id<th>Name<th>Email<th>Booking mode<th>Response
+{% for d1 in data %}
+<TR><TD>{{d1.id}}
+<TD>{{d1.name}}</font><TD>{{d1.email}}<TD>{{d1.mode}}<TD>{{d1.stz}}
+{% endfor %}
+</table>
+
+
+<br><br>
+
+{% endif  %}
+
+<center>
+	<font size="" color="#ff0000"><strong>{{msg}}</strong></font>
+	<br><br>
+
+<h2>Request to book hostel</h2><br>
+<form method="post" action="/bookhostel/">
+ {% csrf_token %} 
+
+<table width="60%" id="tab" >
+	<tr>
+	<th> Name<td><input  type="text" name="name" value="{{name}}"  required="required" >
+	<tr>
+	<th> Email<td><input  type="text" name="email"value="{{email}}"  required="required" >
+	<tr>
+	<th> Mode<td><select name="mode" class="form-control">
+		<option value="Monthly" selected>Monthly basis
+		<option value="Daily">Daily basis
+	</select>
+	
+<tr>
+	<th> <td><input  type="submit" value="Request">
+
+	
+</tr>
+</table>
+
+</form>
+
+
+
+{% endblock %}

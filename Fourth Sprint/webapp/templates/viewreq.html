@@ -1,0 +1,39 @@
+
+{% extends 'adminbase.html' %}
+{% block content %}
+<center>
+
+
+	<font size="" color="#ff0000"><strong>{{msg}}</strong></font>
+	<br><br>
+<h2>View New Requests</h2>
+<br><br>
+
+<table width="100%" id="tab" >
+
+<tr><th>ID<th>Name<th>Email<th>Mode <th>
+{% for d1 in data %}
+
+<TR><TD>{{d1.id}}<TD>{{d1.name}}<TD>{{d1.email}}<TD>{{d1.mode}}<TD>
+
+
+	{% if 'Monthly' == d1.mode %} 
+
+		<a href="{% url 'mbookingpage' id=d1.id %}">Accept</a>
+
+	{% else %}
+		<a href="{% url 'dbookingpage' id=d1.id %}">Accept</a>
+ 
+	{% endif %}
+||		<a href="{% url 'reject' id=d1.id %}">Reject</a>
+
+{{d1.date_2}}
+
+
+{% endfor %}
+
+</table>
+
+
+
+{% endblock %}

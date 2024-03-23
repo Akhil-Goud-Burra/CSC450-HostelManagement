@@ -1,0 +1,518 @@
+{% load static %}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hostel Management</title>
+    <!-- google-fonts -->
+    <!-- //google-fonts -->
+    <!-- Template CSS Style link -->
+
+		<link rel="stylesheet" href="{% static 'assets/css/style-starter.css' %}" >
+
+</head>
+
+<body>
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h1>
+                    <a class="navbar-brand" href="index.html">
+                        Hostel Management
+                    </a>
+                </h1>
+                <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mx-lg-auto">
+                                            <li class="nav-item">
+                            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/alogin">Admin<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/ulogin">User<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/userreg">Registration<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- search button -->
+                <!-- //search button -->
+                <!-- toggle switch for light and dark theme -->
+                <div class="cont-ser-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    <!--//header-->
+
+    <!-- banner section -->
+    <div class="slider-container">
+        <div class="left-slide">
+            <div style="background-color: #cc3366">
+
+				
+				<h3 class="mt-5 mb-3">Hostel Management</h3>
+
+                <p class="mt-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo.</p>
+                <a href="" class="btn btn-style mt-5">Read More</a>
+            </div>
+        </div>
+        <div class="right-slide">
+            <div class="bg-image1"></div>
+        </div>
+    </div>
+    <!-- //banner section -->
+
+    <!-- gallery section -->
+    <section class="w3l-gallery py-5" id="gallery">
+        <div class="container py-md-5 py-4">
+
+
+		<h1>Welcome</h1>
+			
+			</div>
+        </div>
+    </section>
+
+
+	
+<!-- //video-6-->
+<section class="w3l-ecommerce-main">
+	<!-- /products-->
+	<div class="ecom-contenthny py-5">
+		<div class="container py-lg-5">
+			<h3 class="hny-title mb-0 text-center">Shop With <span>Us</span></h3>
+			<p class="text-center">Handpicked Favourites just for you</p>
+			<!-- /row-->
+			<div class="ecom-products-grids row mt-lg-5 mt-3">
+				<div class="col-lg-3 col-6 product-incfhny mt-4">
+					<div class="product-grid2 transmitv">
+						<div class="product-image2">
+							<a href="#">
+								<img class="pic-1 img-fluid" src="assets/images/shop-1.jpg">
+								<img class="pic-2 img-fluid" src="assets/images/shop-11.jpg">
+							</a>
+							<ul class="social">
+									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+									</li>
+							</ul>
+							<div class="transmitv single-item">
+							<form action="#" method="post">
+									<input type="hidden" name="cmd" value="_cart">
+									<input type="hidden" name="add" value="1">
+									<input type="hidden" name="transmitv_item" value="Women Maroon Top">
+									<input type="hidden" name="amount" value="899.99">
+									<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+										Add to Cart
+									</button>
+								</form>
+							</div>
+						</div>
+						<div class="product-content">
+							<h3 class="title"><a href="#">Women Maroon Top </a></h3>
+							<span class="price"><del>$975.00</del>$899.99</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-6 product-incfhny mt-4">
+					<div class="product-grid2">
+						<div class="product-image2">
+							<a href="#">
+								<img class="pic-1 img-fluid" src="assets/images/shop-2.jpg">
+								<img class="pic-2 img-fluid" src="assets/images/shop-22.jpg">
+							</a>
+							<ul class="social">
+									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+									</li>
+							</ul>
+							<div class="transmitv single-item">
+									<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart">
+											<input type="hidden" name="add" value="1">
+											<input type="hidden" name="transmitv_item" value="Men's Pink Shirt">
+											<input type="hidden" name="amount" value="599.99">
+											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+												Add to Cart
+											</button>
+										</form>
+									</div>
+						</div>
+						<div class="product-content">
+							<h3 class="title"><a href="#">Men's Pink Shirt </a></h3>
+							<span class="price"><del>$775.00</del>$599.99</span>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-3 col-6 product-incfhny mt-4">
+					<div class="product-grid2">
+						<div class="product-image2">
+							<a href="#">
+								<img class="pic-1 img-fluid" src="assets/images/shop-3.jpg">
+								<img class="pic-2 img-fluid" src="assets/images/shop-33.jpg">
+							</a>
+							<ul class="social">
+									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+									</li>
+							</ul>
+							<div class="transmitv single-item">
+									<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart">
+											<input type="hidden" name="add" value="1">
+											<input type="hidden" name="transmitv_item" value="Dark Blue Top">
+											<input type="hidden" name="amount" value="799.99">
+											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+												Add to Cart
+											</button>
+										</form>
+									</div>
+						</div>
+						<div class="product-content">
+							<h3 class="title"><a href="#">Dark Blue Top </a></h3>
+							<span class="price"><del>$875.00</del>$799.99</span>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-3 col-6 product-incfhny mt-4">
+					<div class="product-grid2">
+						<div class="product-image2">
+							<a href="#">
+								<img class="pic-1 img-fluid" src="assets/images/shop-4.jpg">
+								<img class="pic-2 img-fluid" src="assets/images/shop-44.jpg">
+							</a>
+							<ul class="social">
+									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+									</li>
+							</ul>
+							<div class="transmitv single-item">
+									<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart">
+											<input type="hidden" name="add" value="1">
+											<input type="hidden" name="transmitv_item" value="Women Tunic">
+											<input type="hidden" name="amount" value="399.99">
+											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+												Add to Cart
+											</button>
+										</form>
+									</div>
+						</div>
+						<div class="product-content">
+							<h3 class="title"><a href="#">Women Tunic </a></h3>
+							<span class="price"><del>$475.00</del>$399.99</span>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-3 col-6 product-incfhny mt-4">
+					<div class="product-grid2">
+						<div class="product-image2">
+							<a href="#">
+								<img class="pic-1 img-fluid" src="assets/images/shop-5.jpg">
+								<img class="pic-2 img-fluid" src="assets/images/shop-55.jpg">
+							</a>
+							<ul class="social">
+									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+									</li>
+							</ul>
+							<div class="transmitv single-item">
+									<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart">
+											<input type="hidden" name="add" value="1">
+											<input type="hidden" name="transmitv_item" value="Yellow T-Shirt">
+											<input type="hidden" name="amount" value="299.99">
+											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+												Add to Cart
+											</button>
+										</form>
+									</div>
+						</div>
+						<div class="product-content">
+							<h3 class="title"><a href="#">Yellow T-Shirt</a></h3>
+							<span class="price"><del>$575.00</del>$299.99</span>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-3 col-6 product-incfhny mt-4">
+					<div class="product-grid2">
+						<div class="product-image2">
+							<a href="#">
+								<img class="pic-1 img-fluid" src="assets/images/shop-6.jpg">
+								<img class="pic-2 img-fluid" src="assets/images/shop-66.jpg">
+							</a>
+							<ul class="social">
+									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+									</li>
+							</ul>
+							<div class="transmitv single-item">
+									<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart">
+											<input type="hidden" name="add" value="1">
+											<input type="hidden" name="transmitv_item" value="Straight Kurta">
+											<input type="hidden" name="amount" value="699.99">
+											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+												Add to Cart
+											</button>
+										</form>
+									</div>
+						</div>
+						<div class="product-content">
+							<h3 class="title"><a href="#">Straight Kurta </a></h3>
+							<span class="price"><del>$775.00</del>$699.99</span>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-3 col-6 product-incfhny mt-4">
+					<div class="product-grid2">
+						<div class="product-image2">
+							<a href="#">
+								<img class="pic-1 img-fluid" src="assets/images/shop-7.jpg">
+								<img class="pic-2 img-fluid" src="assets/images/shop-77.jpg">
+							</a>
+							<ul class="social">
+									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+									</li>
+							</ul>
+							<div class="transmitv single-item">
+									<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart">
+											<input type="hidden" name="add" value="1">
+											<input type="hidden" name="transmitv_item" value="White T-Shirt">
+											<input type="hidden" name="amount" value="599.99">
+											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+												Add to Cart
+											</button>
+										</form>
+									</div>
+						</div>
+						<div class="product-content">
+							<h3 class="title"><a href="#">White T-Shirt </a></h3>
+							<span class="price"><del>$675.00</del>$599.99</span>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-3 col-6 product-incfhny mt-4">
+					<div class="product-grid2">
+						<div class="product-image2">
+							<a href="#">
+								<img class="pic-1 img-fluid" src="assets/images/shop-8.jpg">
+								<img class="pic-2 img-fluid" src="assets/images/shop-88.jpg">
+							</a>
+							<ul class="social">
+									<li><a href="#" data-tip="Quick View"><span class="fa fa-eye"></span></a></li>
+
+									<li><a href="#" data-tip="Add to Cart"><span class="fa fa-shopping-bag"></span></a>
+									</li>
+							</ul>
+							<div class="transmitv single-item">
+									<form action="#" method="post">
+											<input type="hidden" name="cmd" value="_cart">
+											<input type="hidden" name="add" value="1">
+											<input type="hidden" name="transmitv_item" value="Blue Sweater">
+											<input type="hidden" name="amount" value="499.99">
+											<button type="submit" class="transmitv-cart ptransmitv-cart add-to-cart">
+												Add to Cart
+											</button>
+										</form>
+									</div>
+						</div>
+						<div class="product-content">
+							<h3 class="title"><a href="#">Blue Sweater</a></h3>
+							<span class="price"><del>$575.00</del>$499.99</span>
+						</div>
+					</div>
+
+				</div>
+
+
+			</div>
+			<!-- //row-->
+		</div>
+	</div>
+</section>
+    <!-- //gallery section -->
+
+
+    <!-- footer -->
+    <footer class="w3l-footer-29-main">
+        <div class="footer-29-w3l py-5">
+            <div class="container pt-md-5 pt-4">
+                <div class="w3l-footer-text-style">
+                    <div class="footer-list-cont d-flex align-items-center justify-content-between mb-5">
+                        <div class="main-social-footer-29">
+                            <a href="#facebook" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#twitter" class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#instagram" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#linkedin" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+<script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'assets/js/theme-change.js' %}"></script>
+
+<script src="{% static 'assets/js/lightbox-plus-jquery.min.js' %}"></script>
+<script src="{% static 'assets/js/counter.js' %}"></script>
+    
+    <script>
+        $(document).ready(function () {
+
+            $('.client-single').on('click', function (event) {
+                event.preventDefault();
+
+                var active = $(this).hasClass('active');
+
+                var parent = $(this).parents('.testi-wrap');
+
+                if (!active) {
+                    var activeBlock = parent.find('.client-single.active');
+
+                    var currentPos = $(this).attr('data-position');
+
+                    var newPos = activeBlock.attr('data-position');
+
+                    activeBlock.removeClass('active').removeClass(newPos).addClass('inactive').addClass(
+                        currentPos);
+                    activeBlock.attr('data-position', currentPos);
+
+                    $(this).addClass('active').removeClass('inactive').removeClass(currentPos).addClass(
+                        newPos);
+                    $(this).attr('data-position', newPos);
+
+                }
+            });
+
+        }(jQuery));
+    </script>
+    <!-- //testimonial script -->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!--bootstrap-->
+	
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <!-- //bootstrap-->
+    <!-- //Js scripts -->
+</body>
+
+</html>

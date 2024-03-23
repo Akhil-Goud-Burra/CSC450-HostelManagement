@@ -1,0 +1,61 @@
+
+{% extends 'userbase.html' %}
+{% load static %}
+
+{% block content %}
+
+{% static "assets/images" as baseUrl %}
+
+
+<font size="" color="#ff0000"><strong>{{msg}}</strong></font>
+<table>
+<tr>
+	<td>
+<table align="left" width="60%">
+<tr>
+	<td>
+<h2>Missing Items</h2>
+	<br>
+{% for d1 in data %}
+
+<img title=" " alt=" " src="{{baseUrl}}/{{d1.image}}" width="350" height="300">	
+<h3>Missing: {{d1.name_item}}</h3>
+<P> {{d1.description}}</P>
+<br>Posted by:
+
+<h5>{{d1.name}}</h5>
+<h5>Contact: {{d1.contact}}</h5>
+<br><br><br><br>
+{% endfor %}
+</td>
+</tr>
+</table>
+<td width="30%" valign="top">
+<form method="post" action="/missing/">
+ {% csrf_token %} 
+
+<table id="tab" >
+	<tr>
+	<th><h2><font color="#ffffff" >Post Missing Item</font></h2>
+<tr>
+	<td><b> Name of the Item<br><input  type="text" name="name_item"  required="required" >
+	<tr>
+	<td><b> Description<br><textarea name="des" rows="" cols=""></textarea>
+	<tr>
+	<td> <b>Contact<br><input  type="text" name="ph"  required="required" ><tr>
+	<tr><td><b> Upload Image<br><input  type="file" name="image"  required="required" >
+	
+	<tr> <td><input  type="submit" value="Post">
+
+	
+</tr>
+</form>
+</table>
+
+
+
+
+</td>
+</tr>
+</table>
+{% endblock %}
