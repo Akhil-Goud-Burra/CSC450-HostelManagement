@@ -1,0 +1,50 @@
+{%include "userheader.html" %}
+	
+<section class="w3l-breadcrumb">
+    <div class="container">
+        <ul class="breadcrumbs-custom-path">
+            <li><a href="/">Home</a></li>
+         <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Payment</li>
+        </ul>
+    </div>
+</section>
+
+
+<section class="w3l-contact-11 py-5">
+    <div class="contacts-main py-lg-5 py-md-4">
+      <div class="contant11-top-bg">
+        <div class="container">
+           <div class="title-content text-center">
+		   <h6>{{msg}}</h6>
+                <h3 class="sub-title">Payment</h6>
+            <br>    
+            </div> 
+
+<form method="post" action="/paydone">
+
+
+
+<table id="tab" width="40%" align="center">
+<tr>
+	<td>Amount</td>
+	<td>{{amt}} /-
+</tr>
+<tr>
+	<td>Debit or Credit Card Number</td>
+	<td><input type="text" name="" class="form-control"  required  ></td>
+</tr>
+<tr>
+	<td>Expiry</td>
+	<td><input type="month" name="" class="form-control"  required ></td>
+	<tr>
+	<td>CVV</td>
+	<td><input type="number" name="" class="form-control"  required ></td>
+</tr>
+<tr>
+	<td></td>
+
+		<td><input type="submit" value="Pay"  class="form-control"  required ></td>
+	</form>
+</table>
+
+{%include "footer.html" %}
