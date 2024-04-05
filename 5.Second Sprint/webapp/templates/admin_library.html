@@ -1,0 +1,130 @@
+{% extends 'adminbase.html' %}
+{% block content %}
+<center>
+
+<font size="" color="#ff0000"><strong>{{msg}}</strong></font>
+
+<h2>Library Management</h2>
+<br><br>
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+    $("#streamBtn").click(function() {
+        $("#div1").fadeToggle();
+    });
+    
+    $("#bookBtn").click(function() {
+        $("#div2").fadeToggle();
+    });
+    
+    $("#availabilityBtn").click(function() {
+        $("#div3").fadeToggle();
+    });
+    
+    $("#csbtn").click(function() {
+        $("#divcs").fadeToggle();
+    });
+    
+    $("#usbtn").click(function() {
+        $("#divus").fadeToggle();
+    });
+    
+    $("#dsbtn").click(function() {
+        $("#divds").fadeToggle();
+    });
+
+});
+
+</script>
+</head>
+
+<body>
+
+<br><br><br><br><br>
+
+<button id="streamBtn">Stream</button><br><br>
+
+<div id="div1" style="display: none;">
+
+<br>
+
+<button id="csbtn"> Create Stream </button>
+
+<div id="divcs" style="display: none;">
+
+<table width="50%">
+
+<tr><td>Stream Name: <input type="text" name="uid" size="10" placeholder="cse,eee,ece" required="required"></input><br></td></tr>
+
+<tr><td><br><input type="submit"  value="Submit"></td></tr>
+</table>
+
+</div>
+
+<button id="rsbtn"> Read Stream </button> 
+
+<button id="usbtn"> Update Stream </button>
+<div id="divus" style="display: none;">
+
+<table width="50%">
+
+<tr><td>Choose Stream: <input type="text" name="uid" size="10" placeholder="cse,eee,ece" required="required"></input><br></td></tr>
+
+<tr><td>Update Stream: <input type="text" name="uid" size="10" placeholder="cse,eee,ece" required="required"></input><br></td></tr>
+
+<tr><td><br><input type="submit"  value="Submit"></td></tr>
+</table>
+
+</div>
+
+<button id="dsbtn"> Delete Stream </button>
+<div id="divds" style="display: none;">
+
+<table width="50%">
+
+<tr><td>Choose Stream: <input type="text" name="uid" size="10" placeholder="cse,eee,ece" required="required"></input><br></td></tr>
+
+<tr><td>Delete Stream: <input type="text" name="uid" size="10" placeholder="cse,eee,ece" required="required"></input><br></td></tr>
+
+<tr><td><br><input type="submit"  value="Submit"></td></tr>
+</table>
+
+</div>
+
+<br><br>
+</div><br>
+
+<button id="bookBtn">Book</button><br><br>
+
+<div id="div2" style="display: none;">
+<br>
+<button id="csbtn"> Create Book </button>
+<button id="rsbtn"> Read Book </button> 
+<button id="usbtn"> Update Book </button>
+<button id="dsbtn"> Delete Book </button>
+<br><br>
+</div><br>
+
+<button id="availabilityBtn">Availability</button><br><br>
+
+<div id="div3" style="display: none;"> 
+<br>
+<button id="csbtn"> Create Book </button>
+<button id="rsbtn"> Read Book </button> 
+<button id="usbtn"> Update Book </button>
+<button id="dsbtn"> Delete Book </button>
+<br><br>
+</div>
+
+</body>
+</html>
+
+<br><br>
+
+{% endblock %}

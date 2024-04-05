@@ -1,0 +1,83 @@
+{% extends 'userbase.html' %}
+{% block content %}
+<center>
+
+	<font size="" color="#ff0000"><strong>{{msg}}</strong></font>
+
+<h2>Library Management</h2>
+<br><br>
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+<title>Library</title>
+
+<style>
+
+  .text,.text2{
+    display: inline-block;
+  }
+
+  .div1,.div2,.div3,.div4{
+    display: inline-block;
+  }
+
+  .button{
+    margin-left: 120px;
+    margin-top: 10px;
+  }
+
+  .div4{
+	margin-left: 20px;
+  }
+
+  .button{
+    height: 35px;
+    width: 88px;
+    border: none;
+    border-radius: 40px;
+    background-color:greenyellow;
+  }
+
+</style>
+
+  </head>
+
+  <body>
+
+    <div>
+
+		<div class="div1">
+		<p calss="text">Choose Stream </p>
+		</div>
+
+		<div class="div2">
+		<input type="text" placeholder="CSC/ECE/IT">
+		</div>
+
+    </div>
+
+    <div>
+
+		<div class="div3">
+		<p class="text2">Book Name</p>
+
+    </div>
+
+	<div class="div4">
+	<input class="box2" type="text" placeholder="Enter Book Name">
+	</div><br>
+
+    <button class="button">Submit</button>
+
+    </div>
+
+  </body>
+
+</html>
+
+<br><br>
+
+{% endblock %}
