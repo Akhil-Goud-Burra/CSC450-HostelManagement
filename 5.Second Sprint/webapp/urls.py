@@ -38,9 +38,6 @@ urlpatterns = [
     path('payment/', views.payment, name="payment"),
     path('paymentcomp/', views.paymentcomp, name="paymentcomp"),
     path('viewtransactions/', views.viewtransactions, name="viewtransactions"),
-    
-    
-    
-
-    
+    path('library/', views.library, name="library"),     
+    path('admin_library/', views.adminlibrary, name="adminlibrary"),
 ]
