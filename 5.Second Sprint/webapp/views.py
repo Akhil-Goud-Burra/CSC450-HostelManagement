@@ -303,4 +303,13 @@ def viewtransactions(request):
     return render(request, 'viewtransactions.html',{'data':d})
 
 
+def library(request):
+    email=request.session['useremail']
+    d=transactions.objects.filter(email=email)
+    return render(request, 'library.html',{'data':d})
+
+def adminlibrary(request):
+    return render(request, 'admin_library.html')
+
+
 
