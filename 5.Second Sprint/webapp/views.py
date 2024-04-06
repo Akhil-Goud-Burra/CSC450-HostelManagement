@@ -170,6 +170,7 @@ def adminloginactiondef(request):
 
             if auth_response.status_code == 200:
                 request.session['token'] = token
+                request.session['adminid'] = 'admin'
                 return render(request, 'admin_home.html')
             else:
                 authentication_data = auth_response.json()
